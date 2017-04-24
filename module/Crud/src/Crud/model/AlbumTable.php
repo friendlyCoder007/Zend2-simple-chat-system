@@ -1,5 +1,5 @@
 <?php
-namespace crud\model;
+namespace Crud\model;
 use Zend\Db\TableGateway\TableGateway;
 
 
