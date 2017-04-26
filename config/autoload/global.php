@@ -17,7 +17,7 @@ return array(
        ),
      ),  
      
- 'db' => array(
+ 'db1' => array(
  'driver' => 'Pdo',
  'dsn' => 'mysql:dbname=zf2tutorial;host=localhost',
  'driver_options' => array(
