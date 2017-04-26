@@ -12,10 +12,7 @@ namespace Application;
 return array(
     'router' => array(
         'routes' => array(
-           
-            
-            
-           'home' => array(
+            'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
                     'route'    => '/',
@@ -56,7 +53,7 @@ return array(
             'Application\Controller\Index' => Controller\IndexController::class
         ),
     ),
-     'view_manager' => array(
+    'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',
