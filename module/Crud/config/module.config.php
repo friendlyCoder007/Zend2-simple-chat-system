@@ -58,11 +58,15 @@ return array(
             'Crud\Controller\Crud' =>  Controller\CrudController::class
         ),
     ),
-    'view_manager' => array(
+  
+
+
+      'view_manager' => array(
       
         'template_path_stack' => array(
             __DIR__ . '/../view',
         ),
     ),
+   
  
 );
