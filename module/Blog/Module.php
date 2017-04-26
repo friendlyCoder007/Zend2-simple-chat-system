@@ -10,7 +10,7 @@ class Module  implements AutoloaderProviderInterface,ConfigProviderInterface
  
     public function onBootstrap(MvcEvent $e)
     {
-        $eventManager      = $e->getApplication()->getEventManager();
+        $eventManagers= $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
     }
