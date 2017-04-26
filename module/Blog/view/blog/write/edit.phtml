@@ -1,0 +1,14 @@
+
+
+<?php
+ $form = $this->form;
+ $form->setAttribute('action', $this->url('post/edit', array(), true));
+ $form->prepare();
+
+ $form->get('submit')->setValue('Update Post');
+
+ echo $this->form()->openTag($form);
+
+ echo $this->formCollection($form);
+
+ echo $this->form()->closeTag();

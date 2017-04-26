@@ -4,20 +4,30 @@
 return array(
  
   'navigation' => array(
+      
    'default' => array(
+       
       array(
        'label' => 'Home',
-        'route' => 'home',                 
+       'route' => 'home',
+    
+          
              ),
-        array(
-           
+      array(           
         'label'=>'Crud',   
-        'route' =>'crud'                          
-       ),               
+        'route' =>'crud',
+     
+             
+       ),  
+      array(
+      'label'=>'Blog',   
+      'route' =>'post'   
+           
+      ),      
        ),
      ),  
-     
- 'db' => array(
+    
+ 'db1' => array(
  'driver' => 'Pdo',
  'dsn' => 'mysql:dbname=zf2tutorial;host=localhost',
  'driver_options' => array(
@@ -29,9 +39,7 @@ return array(
    'service_manager' => array(
        
          'factories' => array(
-             'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
-             'Zend\Db\Adapter\Adapter'=>'Zend\Db\Adapter\AdapterServiceFactory'
-             
+             'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',          
     ),
        
        
