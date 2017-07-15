@@ -36,6 +36,7 @@ class Module {
  'factories' => array(
      
  'Album' => function($sm) {
+    
  $tableGateway = $sm->get('AlbumTableGateway');
  $table = new AlbumTable($tableGateway);
  return $table;

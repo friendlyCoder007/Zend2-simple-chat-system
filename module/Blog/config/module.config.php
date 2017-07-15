@@ -73,6 +73,7 @@ namespace Blog;
                     ),
                 ),
                 
+                
                'may_terminate' => true,
                  'child_routes'  => array(
                      'detail' => array(

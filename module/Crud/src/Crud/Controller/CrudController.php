@@ -12,6 +12,7 @@ class CrudController extends AbstractActionController{
     
     
  public function getAlbumTable()
+         
  {
    if (!$this->albumTable) {
    $sm = $this->getServiceLocator();
@@ -25,25 +26,33 @@ class CrudController extends AbstractActionController{
     
     public function indexAction()
     {
-       
+     $paginator = $this->getAlbumTable()->fetchAll(true); 
+        $page = 1;
+
+    if ($this->params()->fromRoute('page')) {
+        $page = $this->params()->fromRoute('page');
+    }
+
+    $paginator->setCurrentPageNumber((int)$page);
+    $paginator->setItemCountPerPage(4);
         
-        
-        return new ViewModel(array(
-            
-        'albums' => $this->getAlbumTable()->fetchAll()));
+    return new ViewModel(array(            
+    'paginator' => $paginator));
     }
     
+    
+  
     
     
     
     public function editAction(){
       
-      $id = (int) $this->params()->fromRoute('id', 0);
-     if (!$id) {
-      return $this->redirect()->toRoute('crud', array(
-    'action' => 'add'
+   $id = (int) $this->params()->fromRoute('id', 0);
+   if (!$id) {
+   return $this->redirect()->toRoute('crud', array(
+   'action' => 'add'
      ));
-  }  
+   }  
         
       try {
    $album = $this->getAlbumTable()->getAlbum($id);
@@ -89,18 +98,21 @@ class CrudController extends AbstractActionController{
    $form->get('submit')->setValue('Add');
 
    $request = $this->getRequest();
+   
    if ($request->isPost()) {
    $album = new album();
    $form->setInputFilter($album->getInputFilter());
    $form->setData($request->getPost());
  
    if ($form->isValid()) {
+   
        
    $album->exchangeArray($form->getData());
+   
    $this->getAlbumTable()->saveAlbum($album);
  
    // Redirect to list of albums
-   return $this->redirect()->toRoute('crud');
+  // return $this->redirect()->toRoute('crud');
    }
    }
    

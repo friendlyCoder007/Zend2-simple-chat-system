@@ -16,14 +16,23 @@ return array(
       array(           
         'label'=>'Crud',   
         'route' =>'crud',
-     
+       
              
        ),  
       array(
       'label'=>'Blog',   
       'route' =>'post'   
            
-      ),      
+      ),  
+   
+        
+       
+    array(
+        
+      'label'=>'FileMenager',   
+      'route' =>'filemenager', 
+       
+      ),
        ),
      ),  
     

@@ -1,7 +1,11 @@
 <?php
 namespace Crud\model;
-use Zend\Db\TableGateway\TableGateway;
 
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
+use Zend\Db\Sql\Select;
+use Zend\Paginator\Adapter\DbSelect;
+use Zend\Paginator\Paginator;
 
 
 class AlbumTable {
@@ -16,8 +20,23 @@ class AlbumTable {
  
  }
 
- public function fetchAll()
+ 
+ public function fetchAll($paginated=false)
  {
+     
+ if($paginated){
+       
+   $select = new Select('album');
+   $resultSetPrototype = new ResultSet();
+   $resultSetPrototype->setArrayObjectPrototype(new Album());
+   $paginatorAdapter = new DbSelect($select,
+   $this->tableGateway->getAdapter(),
+   $resultSetPrototype      
+            );
+   $paginator = new Paginator($paginatorAdapter);
+   return $paginator; 
+   
+   } 
      
  $resultSet = $this->tableGateway->select();
  return $resultSet;

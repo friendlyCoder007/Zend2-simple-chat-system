@@ -12,9 +12,7 @@ namespace Application;
 return array(
     'router' => array(
         'routes' => array(
-           
-            
-            
+                                   
            'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
@@ -42,7 +40,7 @@ return array(
         ),
     ),
     'translator' => array(
-        'locale' => 'en_US',
+        'locale' => 'en_Us',
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
@@ -51,11 +49,13 @@ return array(
             ),
         ),
     ),
+    
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => Controller\IndexController::class
         ),
     ),
+    
      'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,

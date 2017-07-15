@@ -7,32 +7,42 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Crud;
+namespace Menager;
 
 return array(
-     
-    'router' => array(
+    
+    'controllers' => array(
         
-     'routes' => array(
+       'invokables'=>array(
+           
+           
+            'Menager\Controller\Menager' =>Controller\MenagerController::class
+            
+             
+        ),
+    ),
+    
+ 'router' => array(
+           
+        'routes' => array(
   
-            // The following is a route to simplify getting started creating
-            // new controllers and actions without needing to create a new
-            // module. Simply drop new controllers in, and you can access them
-            // using the path /application/:controller/:action
-            'crud' => array(
+           
+            'filemenager' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/crud',
+                    'route'    => '/file-menager',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Crud\Controller',
-                        'controller'    => 'Crud',
+                        '__NAMESPACE__' => 'Menager\Controller',
+                        'controller'    => 'Menager',
                         'action'        => 'index',
                     ),
                 ),
-                'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
+                
+               'may_terminate' => true, 
+               'child_routes' => array(
+                  'default' => array(
                         'type'    => 'Segment',
+                      
                         'options' => array(
                             'route'    => '[/:action][/:id]',
                             'constraints' => array(
@@ -40,51 +50,28 @@ return array(
                                 'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
                                 'id'=>'[0-9]+'
                             ),
+                            
                             'defaults' => array(
-                             'controller'=>'Crud\Controller\Crud' 
+                             'controller'=>'Menager\Controller\Menager' 
                                 
                             ),
                         ),
                     ),
-                    
-            'paginator' => array(
-            'type' => 'segment',
-            'options' => array(
-                'route' => '/crud/[page/:page]',
+                 
                 
-                'defaults' => array(
-                     'page'=>1
-                ),
-            ),
-        )   
-                    
-                ),
-    
+            ),    
                 
             ),
-         
-       
-         
-         
         ),
     ),
     
-    
-    
-    'controllers' => array(
-        'invokables' => array(
-            'Crud\Controller\Crud' =>  Controller\CrudController::class
-        ),
-    ),
-  
-
-
-      'view_manager' => array(
+   'view_manager' => array(
       
         'template_path_stack' => array(
             __DIR__ . '/../view',
         ),
     ),
-   
- 
+    
+    // Placeholder for console routes
+
 );
