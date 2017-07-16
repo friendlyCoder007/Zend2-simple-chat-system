@@ -31,7 +31,7 @@ class FileMenagerService {
     
     
     
-    public function findtFile($id){
+    public function findFile($id){
         
     $result=$this->FileResourceMapper->getFile($id);    
         
