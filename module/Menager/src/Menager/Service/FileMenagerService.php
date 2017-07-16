@@ -3,7 +3,7 @@
 namespace Menager\Service;
 use Menager\Mapper\FileResourceMapper;
 
-class FileMenageService {
+class FileMenagerService {
    
  protected $FileResourceMapper;   
     
