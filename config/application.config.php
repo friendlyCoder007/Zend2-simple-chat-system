@@ -12,7 +12,7 @@ return array(
         'Application',
         'Crud',
         'Blog',
-        'Menager',
+        'Menager'
         
         
     ),
