@@ -8,7 +8,7 @@ use Zend\Paginator\Adapter\DbSelect;
 use Zend\Paginator\Paginator;
 
 
-class AlbumTabl {
+class AlbumTable {
     
  protected $tableGateway;
   
