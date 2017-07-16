@@ -11,7 +11,7 @@ use Zend\Db\TableGateway\TableGateway;
 
 
 
-class Modul {
+class Module {
     
     
     public function onBootstrap(MvcEvent $e)
