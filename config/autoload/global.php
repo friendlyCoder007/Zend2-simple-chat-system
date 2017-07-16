@@ -30,7 +30,7 @@ return array(
     array(
         
       'label'=>'FileMenager',   
-      'route' =>'filemenage', 
+      'route' =>'filemenager', 
        
       ),
        ),
