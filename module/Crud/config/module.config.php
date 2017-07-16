@@ -11,7 +11,7 @@ namespace Crud;
 
 return array(
      
-    'route' => array(
+    'router' => array(
         
      'routes' => array(
   
