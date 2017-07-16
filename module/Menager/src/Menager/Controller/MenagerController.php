@@ -8,7 +8,7 @@ use Menager\Form\UploadForm;
 
 
 
-class MenageController extends AbstractActionController {
+class MenagerController extends AbstractActionController {
    
     
    
