@@ -8,7 +8,7 @@ use Crud\model\album;
 
 class CrudController extends AbstractActionController{
 
- protected $albumTable;
+ protected $albumTabl;
     
     
  public function getAlbumTable()
