@@ -4,7 +4,7 @@ namespace Menager\Mapper;
 class FileResourceMapper {
    
  
- protected $result=array();  
+ protected $resul=array();  
     
     
  public   function __construct($config) {
