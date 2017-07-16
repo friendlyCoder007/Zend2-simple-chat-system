@@ -6,7 +6,7 @@ use Zend\Form\Form;
 use Zend\InputFilter;
 
 
-class UploaForm extends Form{
+class UploadForm extends Form{
 
     
     
