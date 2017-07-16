@@ -11,7 +11,7 @@ namespace Menager;
 
 return array(
     
-    'controllers' => array(
+    'controller' => array(
         
        'invokables'=>array(
            
