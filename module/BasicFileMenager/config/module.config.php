@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Menager;
+namespace BasicFileMenager;
 
 return array(
     
@@ -27,10 +27,10 @@ return array(
         'routes' => array(
   
            
-            'filemenager' => array(
+            'basic-filemenager' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/file-menager',
+                    'route'    => '/basic-filemenager',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Menager\Controller',
                         'controller'    => 'Menager',

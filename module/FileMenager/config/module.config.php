@@ -16,10 +16,10 @@ return array(
         'routes' => array(
   
            
-            'extra-filemenager' => array(
+            'filemenager' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/extra-filemenager',
+                    'route'    => '/filemenager',
                     'defaults' => array(
                         '__NAMESPACE__' => 'FileMenager\Controller',
                         'controller'    => 'Data',

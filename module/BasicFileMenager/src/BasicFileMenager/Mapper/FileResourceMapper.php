@@ -1,5 +1,5 @@
 <?php
-namespace Menager\Mapper;
+namespace BasicFileMenager\Mapper;
  
 use Zend\Code\Scanner\DirectoryScanner;
 use RecursiveDirectoryIterator;

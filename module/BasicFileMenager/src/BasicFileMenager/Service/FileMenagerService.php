@@ -1,7 +1,7 @@
 <?php
 
-namespace Menager\Service;
-use Menager\Mapper\FileResourceMapper;
+namespace BasicFileMenager\Service;
+use BasicFileMenager\Mapper\FileResourceMapper;
 
 
 class FileMenagerService {

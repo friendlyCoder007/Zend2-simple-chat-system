@@ -30,7 +30,7 @@ return array(
     array(
         
       'label'=>'BasicFileMenager',   
-      'route' =>'filemenager', 
+      'route' =>'basic-filemenager', 
        
       ), 
        
@@ -38,7 +38,7 @@ return array(
        array(
         
       'label'=>'ExtraFileMenager',   
-      'route' =>'extra-filemenager', 
+      'route' =>'filemenager', 
        
       ),
         

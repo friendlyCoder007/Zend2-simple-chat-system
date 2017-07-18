@@ -1,5 +1,5 @@
 <?php
-namespace Menager\Form;
+namespace BasicFileMenager\Form;
 
 use Zend\Form\Element;
 use Zend\Form\Form;

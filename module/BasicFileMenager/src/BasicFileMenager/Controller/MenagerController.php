@@ -1,10 +1,10 @@
 <?php
 
-namespace Menager\Controller;
+namespace BasicFileMenager\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Menager\Form\UploadForm;
+use BasicFileMenager\Form\UploadForm;
 
 
 class MenagerController extends AbstractActionController {

@@ -13,7 +13,7 @@ return array(
         'Crud',
         'Blog',
         'FileMenager',
-        'Menager'
+        'BasicFileMenager'
         
     ),
 

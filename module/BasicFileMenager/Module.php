@@ -1,13 +1,13 @@
 <?php
 
-namespace Menager;
+namespace BasicFileMenager;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Menager\Mapper\FileResourceMapper;
-use Menager\Service\FileMenagerService;
+use BasicFileMenager\Mapper\FileResourceMapper;
+use BasicFileMenager\Service\FileMenagerService;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface{
     
