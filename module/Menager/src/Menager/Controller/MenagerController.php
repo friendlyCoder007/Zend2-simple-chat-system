@@ -76,7 +76,7 @@ class MenagerController extends AbstractActionController {
       
   $id = (int) $this->params()->fromRoute('id', 0); 
   
-   $fileName=$this->getFileMenager()->findtFile($id);
+   $fileName=$this->getFileMenager()->findFile($id);
   
   
     $response = new \Zend\Http\Response\Stream();
