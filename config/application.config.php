@@ -12,8 +12,8 @@ return array(
         'Application',
         'Crud',
         'Blog',
+        'FileMenager',
         'Menager'
-        
         
     ),
 

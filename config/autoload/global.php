@@ -26,13 +26,24 @@ return array(
       ),  
    
         
-       
+     
     array(
         
-      'label'=>'FileMenager',   
+      'label'=>'BasicFileMenager',   
       'route' =>'filemenager', 
        
+      ), 
+       
+       
+       array(
+        
+      'label'=>'ExtraFileMenager',   
+      'route' =>'extra-filemenager', 
+       
       ),
+        
+       
+       
        ),
      ),  
     
