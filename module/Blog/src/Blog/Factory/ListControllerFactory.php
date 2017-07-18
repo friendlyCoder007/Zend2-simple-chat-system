@@ -19,6 +19,6 @@
          $realServiceLocator = $serviceLocator->getServiceLocator();
          $postService        = $realServiceLocator->get('Blog\Service\PostServiceInterface');
 
-        return new ListController( $postService  );
+        return new ListController($postService);
      }
  }

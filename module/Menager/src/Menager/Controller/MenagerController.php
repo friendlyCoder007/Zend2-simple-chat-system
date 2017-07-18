@@ -7,7 +7,6 @@ use Zend\View\Model\ViewModel;
 use Menager\Form\UploadForm;
 
 
-
 class MenagerController extends AbstractActionController {
    
     
@@ -26,7 +25,9 @@ class MenagerController extends AbstractActionController {
     
     public function indexAction()
     {
-   
+            
+           
+        
      $data=$this->getFileMenager()->listAll();    
       
      
@@ -76,7 +77,7 @@ class MenagerController extends AbstractActionController {
       
   $id = (int) $this->params()->fromRoute('id', 0); 
   
-   $fileName=$this->getFileMenager()->findtFile($id);
+   $fileName=$this->getFileMenager()->findFile($id);
   
   
     $response = new \Zend\Http\Response\Stream();

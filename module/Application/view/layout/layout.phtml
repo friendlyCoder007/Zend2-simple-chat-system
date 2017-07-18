@@ -1,6 +1,7 @@
 <?php echo $this->doctype(); ?>
 
 <html lang="en">
+    
     <head>
        
         <meta charset="utf-8">
@@ -27,23 +28,7 @@
             ->prependFile($this->basePath('js/html5shiv.min.js'),   'text/javascript', array('conditional' => 'lt IE 9',))
                 ; ?>
 
-    
-   <script>document.write('<base href="' + document.location + '" />');</script> 
-        
-   <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
-
-   <script src="https://unpkg.com/zone.js@0.8.4?main=browser"></script>
-        <!-- Angular and RxJS umd scripts -->
-   <script src="https://unpkg.com/rxjs@5.0.1/bundles/Rx.js"></script>
-   <script src="https://unpkg.com/@angular/core/bundles/core.umd.js"></script>
-   <script src="https://unpkg.com/@angular/common/bundles/common.umd.js"></script>
-   <script src="https://unpkg.com/@angular/compiler/bundles/compiler.umd.js"></script>
-   <script src="https://unpkg.com/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
-   <script src="https://unpkg.com/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>    
-   <script src="/app/app.component.js"></script>
-   <script src="/app/app.module.js"></script>
-   <script src="/main.js"></script>
- 
+   
 
     </head>
     
