@@ -10,7 +10,7 @@ class CrudController extends AbstractActionController{
 
  protected $albumTable;
     
-    
+ 
  public function getAlbumTable()
          
  {
@@ -36,6 +36,9 @@ class CrudController extends AbstractActionController{
     $paginator->setCurrentPageNumber((int)$page);
     $paginator->setItemCountPerPage(4);
         
+    
+
+    
     return new ViewModel(array(            
     'paginator' => $paginator));
     }
@@ -45,7 +48,7 @@ class CrudController extends AbstractActionController{
     
     
     
-    public function editAction(){
+   public function editAction(){
       
    $id = (int) $this->params()->fromRoute('id', 0);
    if (!$id) {
@@ -93,8 +96,10 @@ class CrudController extends AbstractActionController{
     
     
    public function addAction(){
-        
+   
+       
    $form = new AlbumForm();
+   
    $form->get('submit')->setValue('Add');
 
    $request = $this->getRequest();

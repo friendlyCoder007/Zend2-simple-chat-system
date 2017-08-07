@@ -92,8 +92,8 @@ class DataController extends AbstractActionController {
             ->addHeaderLine('Content-Length', filesize($fileName));
 
     $response->setHeaders($headers);
-
-
+    
+   
     return $response;
 
      

@@ -8,9 +8,19 @@ use Zend\InputFilter\InputFilterInterface;
 
 class album {
    
+    
 public $id;
+
+
 public $artist;
+
+
 public $title; 
+
+
+public $genre;
+
+
 public $inputFilter;
 
 

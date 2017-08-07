@@ -21,8 +21,8 @@ return array(
        ),  
       array(
       'label'=>'Blog',   
-      'route' =>'post'   
-           
+      'route' =>'post',   
+         
       ),  
    
         
@@ -41,9 +41,9 @@ return array(
       'route' =>'filemenager', 
        
       ),
-        
-       
-       
+      
+      
+   
        ),
      ),  
     

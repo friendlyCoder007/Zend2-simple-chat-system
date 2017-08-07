@@ -46,21 +46,23 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     
-                  <?php echo $this->navigation('navigation')
+                  <?php echo $this->navigation('navigation')                         
                              ->menu()
                              ->setUlClass('nav navbar-nav')
+                             ;?>
                           
-                          ;?>
-                    
+                  
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
         
         <div class="container">
            <!-- Angular 2 render our views-->
-           
-            <?php echo $this->content;?>
+         <?php  $this->navigation('navigation')->breadcrumbs()->setMinDepth(0);?>
+         
+           <?php echo $this->content;?>
             <hr>
+            
             <footer>
                 <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
             </footer>
