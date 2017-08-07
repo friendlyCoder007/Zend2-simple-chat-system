@@ -13,8 +13,8 @@ return array(
         'Crud',
         'Blog',
         'FileMenager',
-        'BasicFileMenager'
-        
+        'BasicFileMenager',      
+        'Rest'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
