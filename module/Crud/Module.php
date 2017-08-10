@@ -20,23 +20,12 @@ class Module {
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
         
-        $eventManager->attach('render', array($this, 'registerJsonStrategy'), 100);
+       
     }
 
     
     
-    
-    public function registerJsonStrategy($e){
-   
-      
-    $app          = $e->getTarget();    
-    $locator      = $app->getServiceManager();
-    $view         = $locator->get('Zend\View\View');
-    $jsonStrategy = $locator->get('ViewJsonStrategy');    
-        
-    $view->getEventManager()->attach($jsonStrategy, 100);
-    
-    }
+  
     
     
     
