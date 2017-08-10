@@ -26,10 +26,10 @@ class Module {
         $app= $e->getTarget();
         $locator      = $app->getServiceManager();
         $view         = $locator->get('Zend\View\View');
-        $jsonStrategy = $locator->get('AcceptStrategy');
+        $acceptStrategy = $locator->get('AcceptStrategy');
 
         // Attach strategy, which is a listener aggregate, at high priority
-        $view->getEventManager()->attach($jsonStrategy, 100);     
+        $view->getEventManager()->attach($acceptStrategy, 100);     
          
         
         
