@@ -38,7 +38,7 @@ class RestController extends AbstractRestfulController{
         
     }
     
-    return new JsonModel(array('data'=>$data));
+    return array('data'=>$data);
     
     }
 
@@ -52,7 +52,7 @@ class RestController extends AbstractRestfulController{
         
         
         
-    return new JsonModel(array('album'=>$album)); 
+    return array('album'=>$album); 
     }
  
     
@@ -71,9 +71,9 @@ class RestController extends AbstractRestfulController{
         $id = $this->getAlbumTable()->saveAlbum($album);
     }
  
-    return new JsonModel(array(
+    return array(
         'data' => $this->get($id),
-    ));
+    );
         
     }
     
@@ -92,9 +92,9 @@ class RestController extends AbstractRestfulController{
         $id = $this->getAlbumTable()->saveAlbum($form->getData());
     }
  
-    return new JsonModel(array(
+    return array(
         'data' => $this->get($id),
-    ));
+    );
 
         
     }
@@ -106,9 +106,9 @@ class RestController extends AbstractRestfulController{
        
     $this->getAlbumTable()->deleteAlbum($id);
  
-    return new JsonModel(array(
+    return array(
        'data' => 'deleted',
-    ));
+    );
         
     } 
     

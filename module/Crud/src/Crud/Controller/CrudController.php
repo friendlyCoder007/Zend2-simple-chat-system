@@ -39,8 +39,8 @@ class CrudController extends AbstractActionController{
     
 
     
-    return new ViewModel(array(            
-    'paginator' => $paginator));
+    return array(            
+    'paginator' => $paginator);
     }
     
     
