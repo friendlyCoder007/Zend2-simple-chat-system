@@ -15,7 +15,9 @@ return array(
         'FileMenager',
         'BasicFileMenager',      
         'Rest',
-        'View'
+        'View',
+        'Mailbox'
+        
     ),
 
     // These are various options for the listeners attached to the ModuleManager

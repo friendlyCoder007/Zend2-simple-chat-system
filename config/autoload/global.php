@@ -42,7 +42,12 @@ return array(
        
       ),
       
-      
+          array(
+        
+      'label'=>'Mailbox',   
+      'route' =>'mail', 
+       
+      )
    
        ),
      ),  
