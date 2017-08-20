@@ -586,7 +586,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
   Collapse.prototype.hide = function () {
     if (this.transitioning || !this.$element.hasClass('in')) return
 
-    var startEvent = $.Event('hide.bs.collapse')
+    var startEvent = $.Event('hide.bs.collapse');
+    
     this.$element.trigger(startEvent)
     if (startEvent.isDefaultPrevented()) return
 
