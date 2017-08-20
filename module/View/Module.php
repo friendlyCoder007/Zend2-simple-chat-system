@@ -13,7 +13,7 @@ class Module {
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
         
-        $ventManager->attach('render', array($this, 'registerAcceptStrategy'), 100); 
+        $eventManager->attach('render', array($this, 'registerAcceptStrategy'), 100); 
         
         
     }
