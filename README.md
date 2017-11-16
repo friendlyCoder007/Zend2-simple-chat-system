@@ -18,3 +18,10 @@ Installation
 
 
 2.Move the module "SocketServer" from "Zend-2-Ratchet-server" repo to your project modules
+
+
+
+
+Required libraries 
+---------------------------
+-Ratchet
