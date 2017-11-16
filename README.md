@@ -1,4 +1,4 @@
-ZendSkeletonApplication
+Zend-2-Ratchet-server
 =======================
 
 Introduction
