@@ -25,3 +25,6 @@ Installation
 Required libraries 
 ---------------------------
 -Ratchet
+
+
+-Zend Framework 2
