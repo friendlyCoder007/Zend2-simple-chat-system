@@ -14,5 +14,7 @@ Running Server
 
 Installation 
 ---------------------------
--clone the repo in your vendor directory
--move the module "SocketServer" from "Zend-2-Ratchet-server" repo to your project modules
+1.Clone the repo in your vendor directory
+
+
+2.Move the module "SocketServer" from "Zend-2-Ratchet-server" repo to your project modules
