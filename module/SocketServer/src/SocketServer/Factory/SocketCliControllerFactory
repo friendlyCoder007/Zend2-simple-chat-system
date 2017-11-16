@@ -1,7 +1,7 @@
 <?php
 namespace SocketServer\Factory;
 
-use SocketChat\Controller\SocketCliController;
+use SocketServer\Controller\SocketCliController;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
