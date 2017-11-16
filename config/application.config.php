@@ -10,13 +10,7 @@ return array(
     'modules' => array(
         
         'Application',
-        'Crud',
-        'Blog',
-        'FileMenager',
-        'BasicFileMenager',      
-        'Rest',
-        'View',
-        'Mailbox'
+         'SocketServer'
         
     ),
 
