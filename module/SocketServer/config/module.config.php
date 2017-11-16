@@ -26,7 +26,7 @@ return array(
          
 'invokables'=>array(
     
- 'messageService'=>'\SocketServer\Service\MessageService',
+ 'messageService'=>'SocketServer\Service\MessageService',
         
 ),     
             
@@ -51,7 +51,7 @@ return array(
      
  'defaults' => array(
      
- 'controller' => 'SocketServert\Controller\SocketCli',
+ 'controller' => 'SocketServer\Controller\SocketCli',
      
  'action' => 'open'
      
