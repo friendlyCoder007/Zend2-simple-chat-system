@@ -7,7 +7,7 @@ Running Server
 
 1.Add module "SocketServer" in your application.config.php
 
-2.In command-line mode  type php  index.php socket open
+2.In command-line mode  type php  index.php open socket
 
 
 
