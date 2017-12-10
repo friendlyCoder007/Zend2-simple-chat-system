@@ -68,7 +68,6 @@ class Module{
              
      'UserTableGateway'=>function($sm){
    
-     $config = $sm->get('config');
      
      $dbAdapter=$sm->get('Zend\Db\Adapter\Adapter')    
      $resultSetPrototype = new ResultSet();
@@ -90,7 +89,7 @@ class Module{
      },
              
     'messageTableGateway'=>function($sm){
-    $config = $sm->get('config');   
+    
    
     $dbAdapter=$sm->get('Zend\Db\Adapter\Adapter')    
     $resultSetPrototype = new ResultSet();
