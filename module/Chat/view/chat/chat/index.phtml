@@ -1,1 +1,27 @@
+<?php
+$this->headScript()->appendFile($this->basePath('js/messages.js'),'text/javascript');
 
+$this->headLink()->appendStylesheet($this->basePath('css/chat.css'));?>
+
+
+<h3>Group Chat</h3>
+
+<iframe src="<?php echo $this->url('chat/default', array('action'=>'message'));?>"
+width="800" height="400" id="messageListFrame"></iframe>
+
+
+<?php 
+echo $this->form()->openTag($form);
+echo '<label id="userName">'. $userName .': </label>';
+
+foreach ($form as $element){
+    
+echo $this->formElement($element); 
+
+echo $this->formElementErrors($element);
+
+}
+
+// Render the closing tag
+echo $this->form()->closeTag();
+;?>
